@@ -1,0 +1,6 @@
+<section *ngIf="post">
+  <h1 class="post-title">{{ post.title }}</h1>
+  <p class="meta">Por {{ post.author }} — {{ post.publishedAt | date }}</p>
+  <div class="content" [innerHTML]="post.content"></div>
+</section>
+<p *ngIf="!post">Post no encontrado.</p>

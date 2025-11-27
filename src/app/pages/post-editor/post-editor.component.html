@@ -1,0 +1,22 @@
+<section>
+  <h2>Crear nuevo post</h2>
+  <form (ngSubmit)="save()">
+    <div>
+      <label>Título</label>
+      <input [(ngModel)]="model.title" name="title" required />
+    </div>
+    <div>
+      <label>Slug</label>
+      <input [(ngModel)]="model.slug" name="slug" />
+    </div>
+    <div>
+      <label>Extracto</label>
+      <textarea [(ngModel)]="model.excerpt" name="excerpt"></textarea>
+    </div>
+    <div>
+      <label>Contenido (HTML)</label>
+      <textarea [(ngModel)]="model.content" name="content" rows="6"></textarea>
+    </div>
+    <button type="submit">Guardar</button>
+  </form>
+</section>

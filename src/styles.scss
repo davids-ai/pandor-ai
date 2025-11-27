@@ -1,0 +1,22 @@
+@import 'styles/variables';
+
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; color: #222; }
+
+.site-header { background: $primary; color: white; padding: 1rem; }
+.site-header nav a { color: white; margin-right: 1rem; text-decoration: none; }
+
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.posts .post-card { border-bottom: 1px solid #eee; padding: 1rem 0; }
+.post-title { color: $primary; }
+
+/* Force small statistic image in article sections (innerHTML content not scoped)
+	 Use high specificity + !important to override other rules. */
+.sq-article .section .section-html img.img-small,
+.sq-article .section .section-html img.img-slide {
+	width: 600px !important;
+	height: auto !important;
+	max-width: none !important;
+	object-fit: contain !important;
+	display: inline-block !important;
+}
