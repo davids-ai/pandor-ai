@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve --project=prueba-blog --open",
     "build": "ng build",
-    "build:gh-pages": "ng build --configuration production --output-path=dist/prueba-blog --base-href /pandor-ai/",
+    "build:gh-pages": "ng build --output-path=dist/prueba-blog --base-href /pandor-ai/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
