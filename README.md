@@ -1,6 +1,6 @@
-# Prueba Blog (Angular scaffold)
+# Pandor-AI
 
-Proyecto scaffold mínimo de Angular con estructura para un blog (componentes, rutas, servicio mock).
+Proyecto scaffold mínimo de Angular con estructura para un boletín (componentes, rutas, servicio mock).
 
 Requisitos:
 - Node.js (>=18 recomendable)
