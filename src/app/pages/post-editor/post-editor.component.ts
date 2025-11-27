@@ -10,18 +10,7 @@ import { Post } from '../../models/post.model';
 export class PostEditorComponent {
   model: Partial<Post> = { title: '', slug: '', excerpt: '', content: '' };
 
-  constructor(private postService: PostService) { }
+  constructor() { }
 
-  save() {
-    const post: Post = {
-      id: 0,
-      title: this.model.title || '',
-      slug: this.model.slug || (this.model.title || '').toLowerCase().replace(/\s+/g, '-'),
-      excerpt: this.model.excerpt || '',
-      content: this.model.content || '',
-      author: 'Admin',
-      publishedAt: new Date().toISOString()
-    };
-    this.postService.add(post).subscribe(() => alert('Post guardado (mock)'));
-  }
+  // editor disabled
 }

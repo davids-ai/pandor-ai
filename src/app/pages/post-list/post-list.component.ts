@@ -1,18 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Post } from '../../models/post.model';
-import { PostService } from '../../services/post.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-post-list',
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.scss']
 })
-export class PostListComponent implements OnInit {
-  posts: Post[] = [];
-
-  constructor(private postService: PostService) { }
-
-  ngOnInit(): void {
-    this.postService.getAll().subscribe(data => this.posts = data);
-  }
+export class PostListComponent {
+  // Feature disabled: posts removed
 }
